@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "369761240989",
+    "firebase_url": "https://foodorder-43af7.firebaseio.com",
+    "project_id": "foodorder-43af7",
+    "storage_bucket": "foodorder-43af7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369761240989:android:ab1eeb5e4bb40a396fd174",
+        "android_client_info": {
+          "package_name": "com.xianwu.TaipeiCuisineOfficial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369761240989-2curcfotcn20n0li3eht1nthaqbfuf5d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xianwu.TaipeiCuisineOfficial",
+            "certificate_hash": "986a70725351370206b32f7050cc7d7b8cc6d867"
+          }
+        },
+        {
+          "client_id": "369761240989-q4i3nlpmnuvumc91t0f8ir82n16m8g9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xianwu.TaipeiCuisineOfficial",
+            "certificate_hash": "4dc548b617865cdcb2af3df0537823387d045fae"
+          }
+        },
+        {
+          "client_id": "369761240989-qk8nb2723njc5hjbeobpcs0m2fsdevk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwDB7b0VBSszCSMrakLDyQ3_GAn6j49k8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369761240989-qk8nb2723njc5hjbeobpcs0m2fsdevk0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "369761240989-28115a51tg2vcjtfpnoq5ehlcereuuf8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "xianwu.foodOrderingApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369761240989:android:f991b5f36978da906fd174",
+        "android_client_info": {
+          "package_name": "com.xianwu.tc_restaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369761240989-qk8nb2723njc5hjbeobpcs0m2fsdevk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwDB7b0VBSszCSMrakLDyQ3_GAn6j49k8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369761240989-qk8nb2723njc5hjbeobpcs0m2fsdevk0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "369761240989-28115a51tg2vcjtfpnoq5ehlcereuuf8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "xianwu.foodOrderingApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
