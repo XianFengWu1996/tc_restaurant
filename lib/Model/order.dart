@@ -92,7 +92,8 @@ class OrderDetails {
             foodName: item['foodName'],
             foodNameChinese: item['foodNameChinese'] == null ? item['foodChineseName'] : item['foodNameChinese'],
             price: item['price'].toDouble(),
-            total: item['total'].toDouble()
+            total: item['total'].toDouble(),
+            options: item['option'] ?? {},
         ));
     }
   }
@@ -124,6 +125,7 @@ class Dish {
   final String foodNameChinese;
   final double price;
   final double total;
+  final Map<String, dynamic>? options;
 
   Dish(
       {required this.comment,
@@ -132,5 +134,7 @@ class Dish {
       required this.foodName,
       required this.foodNameChinese,
       required this.price,
-      required this.total});
+      required this.total,
+        this.options
+      });
 }

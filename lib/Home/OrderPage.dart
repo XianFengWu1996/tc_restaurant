@@ -1,7 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:tc_restaurant/Function/Loading.dart';
 import 'package:tc_restaurant/Model/order.dart';
@@ -18,6 +16,21 @@ class OrderPage extends StatefulWidget {
 
 class _OrderPageState extends State<OrderPage> {
   String _error = '';
+
+  String getPaymentTypeText(String type){
+    switch(type.toLowerCase()){
+      case "prepaid":
+        return 'Prepaid (已付款)';
+      case "cash":
+        return 'Cash (现金）';
+      case "card":
+        return 'Card (到店刷卡）';
+      case "one-time":
+        return 'Prepaid (已付款)';
+      default:
+        return 'Unknown payment';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +59,7 @@ class _OrderPageState extends State<OrderPage> {
               Padding(
                 padding: const EdgeInsets.only(left: 20, top: 20, bottom: 20),
                 child: Text(
-                  '${orderDetails.type!.toUpperCase()}',
+                  '${getPaymentTypeText(orderDetails.type!)}',
                   style: TextStyle(
                     fontSize: 35,
                     color: Colors.red,
@@ -119,12 +132,12 @@ class _OrderPageState extends State<OrderPage> {
                         children: [
                           ListTile(
                             title:
-                            Text('${dish.foodId}. ${dish.foodNameChinese}'),
+                            Text('${dish.foodId}. ${dish.foodNameChinese} ${dish.options!['name'] != null && dish.options!['name'] != '' ? '  选项：${dish.options!['chineseName']}' : ''}'),
                             subtitle: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('${dish.foodName}'),
+                                Text('${dish.foodName}    ${dish.options!['name'] != null && dish.options!['name'] != '' ? 'Choice of Flavor: ${dish.options!['name']}' : ''}'),
                                 dish.comment.isNotEmpty
                                     ? Text('Special Instruction: ${dish.comment}',
                                     style: TextStyle(color: Colors.red))

@@ -46,7 +46,9 @@ class OrderCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Date: ${date.month}/${date.day} ${date.hour}:${date.minute}',
+                  'Date: ${date.month}/${date.day} '
+                      '${date.hour.isGreaterThan(10) ? date.hour : '0${date.hour}'}'
+                      ':${date.minute.isGreaterThan(10) ? date.minute : '0${date.minute}'}',
                   style: orderText,
                 ),
                 Text('Name: ${order.orderContact.name}',
